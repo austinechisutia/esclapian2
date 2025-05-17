@@ -6,6 +6,11 @@ import './Nav.css';
 const Nav = () => {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
 
+  const handleSignupClick = () => {
+    console.log('Opening signup modal');
+    setIsSignupOpen(true);
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -22,7 +27,7 @@ const Nav = () => {
           <Link to="/login" className="login-button"><i className="fas fa-sign-in-alt"></i> Login</Link>
           <button 
             className="signup-button" 
-            onClick={() => setIsSignupOpen(true)}
+            onClick={handleSignupClick}
           >
             <i className="fas fa-user-plus"></i> Sign Up
           </button>
