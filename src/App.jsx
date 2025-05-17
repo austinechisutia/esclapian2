@@ -8,11 +8,12 @@ import Request from './components/request/Request';
 import Info from './components/info/Info';
 import Events from './components/events/Events';
 import Login from './components/login/Login';
+import Signup from './components/signup/Signup';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/esclapian2">
       <div className="app">
         <Nav />
         <Routes>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/info" element={<Info />} />
           <Route path="/events" element={<Events />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     </Router>
