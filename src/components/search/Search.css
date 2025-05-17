@@ -1,0 +1,207 @@
+.search-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 80px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  position: relative;
+  left: 50%;
+  right: 50%;
+}
+
+.search-header {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.search-header h1 {
+  color: navy;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.search-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #666;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+}
+
+.tab-button i {
+  font-size: 1.1rem;
+}
+
+.tab-button.active {
+  background: navy;
+  color: white;
+}
+
+.search-content {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.search-filters {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.search-bar i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: navy;
+}
+
+.filter-options {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.filter-select {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #666;
+  background: white;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: navy;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.donor-card, .unit-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.donor-info, .unit-info {
+  flex: 1;
+}
+
+.donor-info h3, .unit-info h3 {
+  color: navy;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.donor-info p, .unit-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.donor-info i, .unit-info i {
+  color: #ff0000;
+  width: 1rem;
+}
+
+.contact-button, .reserve-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.contact-button {
+  background: navy;
+  color: white;
+}
+
+.reserve-button {
+  background: #ff0000;
+  color: white;
+}
+
+.contact-button:hover, .reserve-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    padding: 1rem;
+  }
+
+  .search-tabs {
+    flex-direction: column;
+  }
+
+  .filter-options {
+    flex-direction: column;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+} 

@@ -1,0 +1,213 @@
+.info-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 80px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  position: relative;
+  left: 50%;
+  right: 50%;
+}
+
+.info-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.info-header h1 {
+  color: navy;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.info-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border: 2px solid navy;
+  border-radius: 6px;
+  color: navy;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: navy;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.tab-button.active {
+  background-color: navy;
+  color: white;
+}
+
+.tab-button i {
+  font-size: 1.1rem;
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.info-card-icon {
+  width: 50px;
+  height: 50px;
+  background-color: navy;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.info-card-icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.info-card h3 {
+  color: navy;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.emergency-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #dc3545;
+}
+
+.emergency-info i {
+  font-size: 1.5rem;
+}
+
+.emergency-info p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.emergency-info strong {
+  color: navy;
+}
+
+.schedule-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.schedule-button:hover {
+  background-color: #001f4d;
+  transform: translateY(-2px);
+}
+
+.schedule-button i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    padding: 1rem;
+  }
+
+  .info-tabs {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .emergency-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .schedule-button {
+    width: 100%;
+    justify-content: center;
+  }
+} 
