@@ -26,12 +26,12 @@ const Nav = () => {
         </button>
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <ul>
-            <li><Link to="/"><i className="fas fa-home"></i> Home</Link></li>
-            <li><Link to="/dashboard"><i className="fas fa-tachometer-alt"></i> Dashboard</Link></li>
-            <li><Link to="/search"><i className="fas fa-search"></i> Search</Link></li>
-            <li><Link to="/request"><i className="fas fa-hand-holding-medical"></i> Request</Link></li>
-            <li><Link to="/info"><i className="fas fa-info-circle"></i> Info</Link></li>
-            <li><Link to="/events"><i className="fas fa-calendar-alt"></i> Events</Link></li>
+            <li><Link to="/" onClick={() => setIsMenuOpen(false)}><i className="fas fa-home"></i> Home</Link></li>
+            <li><Link to="/dashboard" onClick={() => setIsMenuOpen(false)}><i className="fas fa-tachometer-alt"></i> Dashboard</Link></li>
+            <li><Link to="/search" onClick={() => setIsMenuOpen(false)}><i className="fas fa-search"></i> Search</Link></li>
+            <li><Link to="/request" onClick={() => setIsMenuOpen(false)}><i className="fas fa-hand-holding-medical"></i> Request</Link></li>
+            <li><Link to="/info" onClick={() => setIsMenuOpen(false)}><i className="fas fa-info-circle"></i> Info</Link></li>
+            <li><Link to="/events" onClick={() => setIsMenuOpen(false)}><i className="fas fa-calendar-alt"></i> Events</Link></li>
           </ul>
           <div className="mobile-auth-buttons">
             <Link to="/login" className="login-button" onClick={() => setIsMenuOpen(false)}>
