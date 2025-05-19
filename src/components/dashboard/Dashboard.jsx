@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Dashboard = () => {
   return (
